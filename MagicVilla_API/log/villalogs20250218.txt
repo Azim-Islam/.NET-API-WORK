@@ -1,0 +1,1496 @@
+2025-02-18 12:28:58.338 +06:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-18 12:28:58.603 +06:00 [DBG] Entity Framework Core 9.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.2' with options: EngineType=SqlServer 
+2025-02-18 12:28:58.963 +06:00 [DBG] 'ApplicationDbContext' disposed.
+2025-02-18 12:31:38.721 +06:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-18 12:31:38.946 +06:00 [DBG] Entity Framework Core 9.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.2' with options: EngineType=SqlServer 
+2025-02-18 12:31:39.272 +06:00 [DBG] 'ApplicationDbContext' disposed.
+2025-02-18 12:32:24.264 +06:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-18 12:32:24.469 +06:00 [DBG] Entity Framework Core 9.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.2' with options: EngineType=SqlServer 
+2025-02-18 12:32:24.492 +06:00 [DBG] Creating DbConnection.
+2025-02-18 12:32:24.522 +06:00 [DBG] Created DbConnection. (28ms).
+2025-02-18 12:32:24.524 +06:00 [DBG] Migrating using database 'MagicVilla' on server 'localhost'.
+2025-02-18 12:32:24.528 +06:00 [DBG] Opening connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 12:32:24.635 +06:00 [DBG] Opened connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 12:32:24.638 +06:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-18 12:32:24.641 +06:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (3ms).
+2025-02-18 12:32:24.642 +06:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (5ms).
+2025-02-18 12:32:24.645 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-18 12:32:24.659 +06:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-18 12:32:24.659 +06:00 [DBG] Closing connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 12:32:24.662 +06:00 [DBG] Closed connection to database 'MagicVilla' on server 'localhost' (1ms).
+2025-02-18 12:32:24.663 +06:00 [DBG] Opening connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 12:32:24.663 +06:00 [DBG] Opened connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 12:32:24.663 +06:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-02-18 12:32:24.664 +06:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-02-18 12:32:24.664 +06:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-02-18 12:32:24.664 +06:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-02-18 12:32:24.665 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-02-18 12:32:24.672 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-02-18 12:32:24.732 +06:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-02-18 12:32:24.734 +06:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2025-02-18 12:32:24.735 +06:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-18 12:32:24.735 +06:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.735 +06:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.735 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-02-18 12:32:24.736 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-02-18 12:32:24.736 +06:00 [DBG] Committing transaction.
+2025-02-18 12:32:24.737 +06:00 [DBG] Committed transaction.
+2025-02-18 12:32:24.738 +06:00 [DBG] Disposing transaction.
+2025-02-18 12:32:24.739 +06:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-02-18 12:32:24.739 +06:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2025-02-18 12:32:24.739 +06:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-18 12:32:24.739 +06:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.739 +06:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.739 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-18 12:32:24.739 +06:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-18 12:32:24.740 +06:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-02-18 12:32:24.740 +06:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-02-18 12:32:24.740 +06:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-02-18 12:32:24.740 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-18 12:32:24.740 +06:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-18 12:32:24.741 +06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-18 12:32:24.741 +06:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-18 12:32:24.741 +06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-02-18 12:32:24.741 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-18 12:32:24.743 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-18 12:32:24.744 +06:00 [DBG] Closing data reader to 'MagicVilla' on server 'localhost'.
+2025-02-18 12:32:24.744 +06:00 [DBG] A data reader for 'MagicVilla' on server 'localhost' is being disposed after spending 1ms reading results.
+2025-02-18 12:32:24.750 +06:00 [INF] Applying migration '20250218062858_Seed Villa Table'.
+2025-02-18 12:32:24.761 +06:00 [DBG] Executing 5 update commands as a batch.
+2025-02-18 12:32:24.766 +06:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-18 12:32:24.766 +06:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.766 +06:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.766 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CreatedDate', N'Details', N'Image', N'Name', N'Occupancy', N'Rate', N'Sqft', N'UpdatedDate') AND [object_id] = OBJECT_ID(N'[Villas]'))
+    SET IDENTITY_INSERT [Villas] ON;
+INSERT INTO [Villas] ([Id], [CreatedDate], [Details], [Image], [Name], [Occupancy], [Rate], [Sqft], [UpdatedDate])
+VALUES (2, '0001-01-01T00:00:00.0000000', N'Spacious and modern villa with ocean views', N'', N'Luxury Retreat', 8, 350.0E0, 3000, '0001-01-01T00:00:00.0000000'),
+(3, '0001-01-01T00:00:00.0000000', N'Cozy villa nestled in the mountains', N'', N'Mountain Escape', 4, 250.0E0, 1500, '0001-01-01T00:00:00.0000000'),
+(4, '0001-01-01T00:00:00.0000000', N'Villa with direct access to the beach', N'', N'Beachfront Paradise', 6, 400.0E0, 2500, '0001-01-01T00:00:00.0000000'),
+(5, '0001-01-01T00:00:00.0000000', N'Modern villa in the heart of the city', N'', N'Urban Oasis', 3, 300.0E0, 1200, '0001-01-01T00:00:00.0000000'),
+(6, '0001-01-01T00:00:00.0000000', N'Rustic villa surrounded by nature', N'', N'Countryside Charm', 7, 275.0E0, 1800, '0001-01-01T00:00:00.0000000');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CreatedDate', N'Details', N'Image', N'Name', N'Occupancy', N'Rate', N'Sqft', N'UpdatedDate') AND [object_id] = OBJECT_ID(N'[Villas]'))
+    SET IDENTITY_INSERT [Villas] OFF;
+2025-02-18 12:32:24.774 +06:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CreatedDate', N'Details', N'Image', N'Name', N'Occupancy', N'Rate', N'Sqft', N'UpdatedDate') AND [object_id] = OBJECT_ID(N'[Villas]'))
+    SET IDENTITY_INSERT [Villas] ON;
+INSERT INTO [Villas] ([Id], [CreatedDate], [Details], [Image], [Name], [Occupancy], [Rate], [Sqft], [UpdatedDate])
+VALUES (2, '0001-01-01T00:00:00.0000000', N'Spacious and modern villa with ocean views', N'', N'Luxury Retreat', 8, 350.0E0, 3000, '0001-01-01T00:00:00.0000000'),
+(3, '0001-01-01T00:00:00.0000000', N'Cozy villa nestled in the mountains', N'', N'Mountain Escape', 4, 250.0E0, 1500, '0001-01-01T00:00:00.0000000'),
+(4, '0001-01-01T00:00:00.0000000', N'Villa with direct access to the beach', N'', N'Beachfront Paradise', 6, 400.0E0, 2500, '0001-01-01T00:00:00.0000000'),
+(5, '0001-01-01T00:00:00.0000000', N'Modern villa in the heart of the city', N'', N'Urban Oasis', 3, 300.0E0, 1200, '0001-01-01T00:00:00.0000000'),
+(6, '0001-01-01T00:00:00.0000000', N'Rustic villa surrounded by nature', N'', N'Countryside Charm', 7, 275.0E0, 1800, '0001-01-01T00:00:00.0000000');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CreatedDate', N'Details', N'Image', N'Name', N'Occupancy', N'Rate', N'Sqft', N'UpdatedDate') AND [object_id] = OBJECT_ID(N'[Villas]'))
+    SET IDENTITY_INSERT [Villas] OFF;
+2025-02-18 12:32:24.774 +06:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-18 12:32:24.774 +06:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.774 +06:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.774 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250218062858_Seed Villa Table', N'9.0.2');
+2025-02-18 12:32:24.775 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250218062858_Seed Villa Table', N'9.0.2');
+2025-02-18 12:32:24.775 +06:00 [INF] Applying migration '20250218063139_Seed Villa Table With Create Date'.
+2025-02-18 12:32:24.780 +06:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-18 12:32:24.780 +06:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.780 +06:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.780 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2025-02-18T12:31:38.8325189+06:00'
+WHERE [Id] = 2;
+SELECT @@ROWCOUNT;
+2025-02-18 12:32:24.781 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2025-02-18T12:31:38.8325189+06:00'
+WHERE [Id] = 2;
+SELECT @@ROWCOUNT;
+2025-02-18 12:32:24.781 +06:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-18 12:32:24.781 +06:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.781 +06:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.781 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2025-02-18T12:31:38.8325318+06:00'
+WHERE [Id] = 3;
+SELECT @@ROWCOUNT;
+2025-02-18 12:32:24.782 +06:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2025-02-18T12:31:38.8325318+06:00'
+WHERE [Id] = 3;
+SELECT @@ROWCOUNT;
+2025-02-18 12:32:24.782 +06:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-18 12:32:24.782 +06:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.782 +06:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.782 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2025-02-18T12:31:38.8325320+06:00'
+WHERE [Id] = 4;
+SELECT @@ROWCOUNT;
+2025-02-18 12:32:24.782 +06:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2025-02-18T12:31:38.8325320+06:00'
+WHERE [Id] = 4;
+SELECT @@ROWCOUNT;
+2025-02-18 12:32:24.782 +06:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-18 12:32:24.782 +06:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.782 +06:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.782 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2025-02-18T12:31:38.8325321+06:00'
+WHERE [Id] = 5;
+SELECT @@ROWCOUNT;
+2025-02-18 12:32:24.782 +06:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2025-02-18T12:31:38.8325321+06:00'
+WHERE [Id] = 5;
+SELECT @@ROWCOUNT;
+2025-02-18 12:32:24.782 +06:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-18 12:32:24.782 +06:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.782 +06:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.782 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2025-02-18T12:31:38.8325322+06:00'
+WHERE [Id] = 6;
+SELECT @@ROWCOUNT;
+2025-02-18 12:32:24.782 +06:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2025-02-18T12:31:38.8325322+06:00'
+WHERE [Id] = 6;
+SELECT @@ROWCOUNT;
+2025-02-18 12:32:24.783 +06:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-18 12:32:24.783 +06:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.783 +06:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-18 12:32:24.783 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250218063139_Seed Villa Table With Create Date', N'9.0.2');
+2025-02-18 12:32:24.783 +06:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250218063139_Seed Villa Table With Create Date', N'9.0.2');
+2025-02-18 12:32:24.783 +06:00 [DBG] Committing transaction.
+2025-02-18 12:32:24.783 +06:00 [DBG] Committed transaction.
+2025-02-18 12:32:24.783 +06:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-02-18 12:32:24.783 +06:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-02-18 12:32:24.783 +06:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-02-18 12:32:24.783 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-02-18 12:32:24.784 +06:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-02-18 12:32:24.784 +06:00 [DBG] Disposing transaction.
+2025-02-18 12:32:24.784 +06:00 [DBG] Closing connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 12:32:24.784 +06:00 [DBG] Closed connection to database 'MagicVilla' on server 'localhost' (0ms).
+2025-02-18 12:32:24.785 +06:00 [DBG] 'ApplicationDbContext' disposed.
+2025-02-18 12:32:24.786 +06:00 [DBG] Disposing connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 12:32:24.786 +06:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2025-02-18 14:40:35.399 +06:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-02-18 14:40:35.471 +06:00 [DBG] Hosting starting
+2025-02-18 14:40:35.539 +06:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-02-18 14:40:35.541 +06:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-02-18 14:40:35.554 +06:00 [INF] Now listening on: http://localhost:5064
+2025-02-18 14:40:35.554 +06:00 [DBG] Loaded hosting startup assembly MagicVilla_API
+2025-02-18 14:40:35.554 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 14:40:35.555 +06:00 [INF] Hosting environment: Development
+2025-02-18 14:40:35.555 +06:00 [INF] Content root path: C:\Users\Azim\Desktop\.NET-API-WORK\MagicVilla_API
+2025-02-18 14:40:35.555 +06:00 [DBG] Hosting started
+2025-02-18 14:40:35.976 +06:00 [DBG] Connection id "0HNAFUVL1Q008" received FIN.
+2025-02-18 14:40:35.979 +06:00 [DBG] Connection id "0HNAFUVL1Q008" accepted.
+2025-02-18 14:40:35.979 +06:00 [DBG] Connection id "0HNAFUVL1Q008" started.
+2025-02-18 14:40:35.985 +06:00 [DBG] Connection id "0HNAFUVL1Q008" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-18 14:40:35.986 +06:00 [DBG] Connection id "0HNAFUVL1Q008" disconnecting.
+2025-02-18 14:40:35.989 +06:00 [DBG] Connection id "0HNAFUVL1Q008" stopped.
+2025-02-18 14:40:36.186 +06:00 [DBG] Connection id "0HNAFUVL1Q009" accepted.
+2025-02-18 14:40:36.186 +06:00 [DBG] Connection id "0HNAFUVL1Q009" started.
+2025-02-18 14:40:36.208 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger - null null
+2025-02-18 14:40:36.226 +06:00 [DBG] No candidates found for the request path '/swagger'
+2025-02-18 14:40:36.227 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 14:40:36.237 +06:00 [DBG] Connection id "0HNAFUVL1Q009" completed keep alive response.
+2025-02-18 14:40:36.239 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger - 301 0 null 32.1591ms
+2025-02-18 14:40:36.250 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/index.html - null null
+2025-02-18 14:40:36.250 +06:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-02-18 14:40:36.250 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 14:40:36.322 +06:00 [DBG] Connection id "0HNAFUVL1Q009" completed keep alive response.
+2025-02-18 14:40:36.322 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/index.html - 200 null text/html;charset=utf-8 72.8099ms
+2025-02-18 14:40:36.357 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/swagger-ui.css - null null
+2025-02-18 14:40:36.357 +06:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2025-02-18 14:40:36.357 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 14:40:36.358 +06:00 [DBG] Connection id "0HNAFUVL1Q009" received FIN.
+2025-02-18 14:40:36.358 +06:00 [DBG] Connection id "0HNAFUVL1Q009" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-18 14:40:36.358 +06:00 [DBG] Connection id "0HNAFUVL1Q009" disconnecting.
+2025-02-18 14:40:36.364 +06:00 [DBG] Connection id "0HNAFUVL1Q00A" accepted.
+2025-02-18 14:40:36.364 +06:00 [DBG] Connection id "0HNAFUVL1Q00A" started.
+2025-02-18 14:40:36.364 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/index.js - null null
+2025-02-18 14:40:36.364 +06:00 [DBG] No candidates found for the request path '/swagger/index.js'
+2025-02-18 14:40:36.364 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 14:40:36.365 +06:00 [DBG] Connection id "0HNAFUVL1Q00A" completed keep alive response.
+2025-02-18 14:40:36.365 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/index.js - 200 null application/javascript;charset=utf-8 0.5989ms
+2025-02-18 14:40:36.366 +06:00 [DBG] The file transmission was cancelled
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+2025-02-18 14:40:36.376 +06:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-02-18 14:40:36.376 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/swagger-ui.css - 499 152035 text/css 18.4656ms
+2025-02-18 14:40:36.378 +06:00 [DBG] Connection id "0HNAFUVL1Q009" stopped.
+2025-02-18 14:40:36.429 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/favicon-16x16.png - null null
+2025-02-18 14:40:36.429 +06:00 [DBG] No candidates found for the request path '/swagger/favicon-16x16.png'
+2025-02-18 14:40:36.429 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 14:40:36.430 +06:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-02-18 14:40:36.430 +06:00 [DBG] Connection id "0HNAFUVL1Q00A" completed keep alive response.
+2025-02-18 14:40:36.430 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/favicon-16x16.png - 200 665 image/png 1.4352ms
+2025-02-18 14:40:36.485 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/openapi/v1.json - null null
+2025-02-18 14:40:36.489 +06:00 [DBG] 1 candidate(s) found for the request path '/openapi/v1.json'
+2025-02-18 14:40:36.492 +06:00 [DBG] Endpoint 'HTTP: GET /openapi/{documentName}.json' with route pattern '/openapi/{documentName}.json' is valid for the request path '/openapi/v1.json'
+2025-02-18 14:40:36.492 +06:00 [DBG] Request matched endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 14:40:36.493 +06:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-18 14:40:36.494 +06:00 [WRN] Failed to determine the https port for redirect.
+2025-02-18 14:40:36.495 +06:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 14:40:36.506 +06:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-02-18 14:40:36.507 +06:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-02-18 14:40:36.510 +06:00 [DBG] Executing API description provider 'JsonPatchOperationsArrayProvider' from assembly Microsoft.AspNetCore.Mvc.NewtonsoftJson v9.0.1.0.
+2025-02-18 14:40:36.628 +06:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 14:40:36.628 +06:00 [DBG] Connection id "0HNAFUVL1Q00A" completed keep alive response.
+2025-02-18 14:40:36.628 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/openapi/v1.json - 200 null application/json;charset=utf-8 142.7342ms
+2025-02-18 14:40:42.469 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/api/VillaAPIMeow - null null
+2025-02-18 14:40:42.471 +06:00 [DBG] 1 candidate(s) found for the request path '/api/VillaAPIMeow'
+2025-02-18 14:40:42.472 +06:00 [DBG] Endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)' with route pattern 'api/VillaAPIMeow' is valid for the request path '/api/VillaAPIMeow'
+2025-02-18 14:40:42.472 +06:00 [DBG] Request matched endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)'
+2025-02-18 14:40:42.472 +06:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-18 14:40:42.472 +06:00 [INF] Executing endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)'
+2025-02-18 14:40:42.510 +06:00 [INF] Route matched with {action = "GetAllVilla", controller = "VillaApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_API.Models.Dto.VillaDto]] GetAllVilla() on controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API).
+2025-02-18 14:40:42.510 +06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-18 14:40:42.511 +06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-18 14:40:42.511 +06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-18 14:40:42.511 +06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-18 14:40:42.511 +06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-18 14:40:42.512 +06:00 [DBG] Executing controller factory for controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API)
+2025-02-18 14:40:42.609 +06:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-18 14:40:42.624 +06:00 [DBG] Executed controller factory for controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API)
+2025-02-18 14:40:42.629 +06:00 [INF] Executing action method MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API) - Validation state: "Valid"
+2025-02-18 14:40:43.033 +06:00 [DBG] Entity Framework Core 9.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.2' with options: EngineType=SqlServer 
+2025-02-18 14:40:43.072 +06:00 [DBG] Compiling query expression: 
+'DbSet<Villa>()'
+2025-02-18 14:40:43.244 +06:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Villa>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Villa.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Villa.CreatedDate (DateTime) Required, 1], [Property: Villa.Details (string) Required, 2], [Property: Villa.Image (string) Required, 3], [Property: Villa.Name (string) Required MaxLength(50), 4], [Property: Villa.Occupancy (int) Required, 5], [Property: Villa.Rate (double) Required, 6], [Property: Villa.Sqft (int) Required, 7], [Property: Villa.UpdatedDate (DateTime) Required, 8] }
+        SELECT v.Id, v.CreatedDate, v.Details, v.Image, v.Name, v.Occupancy, v.Rate, v.Sqft, v.UpdatedDate
+        FROM Villas AS v) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Villa.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Villa.CreatedDate (DateTime) Required, 1], [Property: Villa.Details (string) Required, 2], [Property: Villa.Image (string) Required, 3], [Property: Villa.Name (string) Required MaxLength(50), 4], [Property: Villa.Occupancy (int) Required, 5], [Property: Villa.Rate (double) Required, 6], [Property: Villa.Sqft (int) Required, 7], [Property: Villa.UpdatedDate (DateTime) Required, 8] }
+        SELECT v.Id, v.CreatedDate, v.Details, v.Image, v.Name, v.Occupancy, v.Rate, v.Sqft, v.UpdatedDate
+        FROM Villas AS v, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Villa entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Villa instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Villa);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Villa.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Villa)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Villa | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Villa | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa")]: 
+                        {
+                            return 
+                            {
+                                Villa instance;
+                                instance = new Villa();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<CreatedDate>k__BackingField = dataReader.GetDateTime(1);
+                                instance.<Details>k__BackingField = dataReader.GetString(2);
+                                instance.<Image>k__BackingField = dataReader.GetString(3);
+                                instance.<Name>k__BackingField = dataReader.GetString(4);
+                                instance.<Occupancy>k__BackingField = dataReader.GetInt32(5);
+                                instance.<Rate>k__BackingField = dataReader.GetDouble(6);
+                                instance.<Sqft>k__BackingField = dataReader.GetInt32(7);
+                                instance.<UpdatedDate>k__BackingField = dataReader.GetDateTime(8);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Villa | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Villa)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: MagicVilla_API.Data.ApplicationDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-02-18 14:40:43.266 +06:00 [DBG] Creating DbConnection.
+2025-02-18 14:40:43.287 +06:00 [DBG] Created DbConnection. (19ms).
+2025-02-18 14:40:43.289 +06:00 [DBG] Opening connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:40:43.449 +06:00 [DBG] Opened connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:40:43.452 +06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-18 14:40:43.457 +06:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2025-02-18 14:40:43.459 +06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (7ms).
+2025-02-18 14:40:43.464 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedDate], [v].[Details], [v].[Image], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2025-02-18 14:40:43.492 +06:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedDate], [v].[Details], [v].[Image], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2025-02-18 14:40:43.518 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:40:43.544 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:40:43.544 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:40:43.545 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:40:43.545 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:40:43.547 +06:00 [DBG] Closing data reader to 'MagicVilla' on server 'localhost'.
+2025-02-18 14:40:43.554 +06:00 [DBG] A data reader for 'MagicVilla' on server 'localhost' is being disposed after spending 56ms reading results.
+2025-02-18 14:40:43.557 +06:00 [DBG] Closing connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:40:43.564 +06:00 [DBG] Closed connection to database 'MagicVilla' on server 'localhost' (6ms).
+2025-02-18 14:40:43.567 +06:00 [INF] Executed action method MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 936.1095ms.
+2025-02-18 14:40:43.570 +06:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2025-02-18 14:40:43.572 +06:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-02-18 14:40:43.572 +06:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-02-18 14:40:43.572 +06:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-18 14:40:43.572 +06:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-18 14:40:43.573 +06:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-02-18 14:40:43.573 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_API.Models.Villa, MagicVilla_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 14:40:43.650 +06:00 [INF] Executed action MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API) in 1136.2904ms
+2025-02-18 14:40:43.650 +06:00 [INF] Executed endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)'
+2025-02-18 14:40:43.650 +06:00 [DBG] Connection id "0HNAFUVL1Q00A" completed keep alive response.
+2025-02-18 14:40:43.651 +06:00 [DBG] 'ApplicationDbContext' disposed.
+2025-02-18 14:40:43.655 +06:00 [DBG] Disposing connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:40:43.657 +06:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2025-02-18 14:40:43.658 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/api/VillaAPIMeow - 200 1070 application/json; charset=utf-8 1188.4261ms
+2025-02-18 14:41:48.864 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/index.html - null null
+2025-02-18 14:41:48.864 +06:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-02-18 14:41:48.864 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 14:41:48.864 +06:00 [DBG] Connection id "0HNAFUVL1Q00A" completed keep alive response.
+2025-02-18 14:41:48.864 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/index.html - 200 null text/html;charset=utf-8 0.642ms
+2025-02-18 14:41:48.888 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/index.js - null null
+2025-02-18 14:41:48.888 +06:00 [DBG] No candidates found for the request path '/swagger/index.js'
+2025-02-18 14:41:48.888 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 14:41:48.889 +06:00 [DBG] Connection id "0HNAFUVL1Q00A" completed keep alive response.
+2025-02-18 14:41:48.889 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/index.js - 200 null application/javascript;charset=utf-8 0.5679ms
+2025-02-18 14:41:48.979 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/openapi/v1.json - null null
+2025-02-18 14:41:48.979 +06:00 [DBG] 1 candidate(s) found for the request path '/openapi/v1.json'
+2025-02-18 14:41:48.979 +06:00 [DBG] Endpoint 'HTTP: GET /openapi/{documentName}.json' with route pattern '/openapi/{documentName}.json' is valid for the request path '/openapi/v1.json'
+2025-02-18 14:41:48.979 +06:00 [DBG] Request matched endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 14:41:48.979 +06:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-18 14:41:48.979 +06:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 14:41:48.985 +06:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 14:41:48.985 +06:00 [DBG] Connection id "0HNAFUVL1Q00A" completed keep alive response.
+2025-02-18 14:41:48.985 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/openapi/v1.json - 200 null application/json;charset=utf-8 6.2968ms
+2025-02-18 14:41:50.673 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/index.html - null null
+2025-02-18 14:41:50.673 +06:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-02-18 14:41:50.673 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 14:41:50.674 +06:00 [DBG] Connection id "0HNAFUVL1Q00A" completed keep alive response.
+2025-02-18 14:41:50.674 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/index.html - 200 null text/html;charset=utf-8 0.526ms
+2025-02-18 14:41:50.785 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/index.js - null null
+2025-02-18 14:41:50.785 +06:00 [DBG] No candidates found for the request path '/swagger/index.js'
+2025-02-18 14:41:50.785 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 14:41:50.785 +06:00 [DBG] Connection id "0HNAFUVL1Q00A" completed keep alive response.
+2025-02-18 14:41:50.785 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/index.js - 200 null application/javascript;charset=utf-8 0.5515ms
+2025-02-18 14:41:50.862 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/openapi/v1.json - null null
+2025-02-18 14:41:50.862 +06:00 [DBG] 1 candidate(s) found for the request path '/openapi/v1.json'
+2025-02-18 14:41:50.863 +06:00 [DBG] Endpoint 'HTTP: GET /openapi/{documentName}.json' with route pattern '/openapi/{documentName}.json' is valid for the request path '/openapi/v1.json'
+2025-02-18 14:41:50.863 +06:00 [DBG] Request matched endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 14:41:50.863 +06:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-18 14:41:50.863 +06:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 14:41:50.868 +06:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 14:41:50.868 +06:00 [DBG] Connection id "0HNAFUVL1Q00A" completed keep alive response.
+2025-02-18 14:41:50.868 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/openapi/v1.json - 200 null application/json;charset=utf-8 5.9361ms
+2025-02-18 14:41:54.566 +06:00 [INF] Application is shutting down...
+2025-02-18 14:41:54.567 +06:00 [DBG] Hosting stopping
+2025-02-18 14:41:54.570 +06:00 [DBG] Connection id "0HNAFUVL1Q00A" disconnecting.
+2025-02-18 14:41:54.571 +06:00 [DBG] Connection id "0HNAFUVL1Q00A" stopped.
+2025-02-18 14:41:54.571 +06:00 [DBG] Connection id "0HNAFUVL1Q00A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-18 14:41:54.574 +06:00 [DBG] Hosting stopped
+2025-02-18 14:41:59.735 +06:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-02-18 14:41:59.784 +06:00 [DBG] Hosting starting
+2025-02-18 14:41:59.839 +06:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-02-18 14:41:59.841 +06:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-02-18 14:41:59.851 +06:00 [INF] Now listening on: http://localhost:5064
+2025-02-18 14:41:59.851 +06:00 [DBG] Loaded hosting startup assembly MagicVilla_API
+2025-02-18 14:41:59.852 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 14:41:59.852 +06:00 [INF] Hosting environment: Development
+2025-02-18 14:41:59.852 +06:00 [INF] Content root path: C:\Users\Azim\Desktop\.NET-API-WORK\MagicVilla_API
+2025-02-18 14:41:59.852 +06:00 [DBG] Hosting started
+2025-02-18 14:41:59.912 +06:00 [DBG] Connection id "0HNAFV0E296NP" received FIN.
+2025-02-18 14:41:59.915 +06:00 [DBG] Connection id "0HNAFV0E296NP" accepted.
+2025-02-18 14:41:59.915 +06:00 [DBG] Connection id "0HNAFV0E296NP" started.
+2025-02-18 14:41:59.921 +06:00 [DBG] Connection id "0HNAFV0E296NP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-18 14:41:59.922 +06:00 [DBG] Connection id "0HNAFV0E296NP" disconnecting.
+2025-02-18 14:41:59.923 +06:00 [DBG] Connection id "0HNAFV0E296NP" stopped.
+2025-02-18 14:42:00.049 +06:00 [DBG] Connection id "0HNAFV0E296NQ" accepted.
+2025-02-18 14:42:00.049 +06:00 [DBG] Connection id "0HNAFV0E296NQ" started.
+2025-02-18 14:42:00.065 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/index.html - null null
+2025-02-18 14:42:00.081 +06:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-02-18 14:42:00.082 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 14:42:00.171 +06:00 [DBG] Connection id "0HNAFV0E296NQ" completed keep alive response.
+2025-02-18 14:42:00.172 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/index.html - 200 null text/html;charset=utf-8 107.8396ms
+2025-02-18 14:42:00.198 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/index.js - null null
+2025-02-18 14:42:00.199 +06:00 [DBG] No candidates found for the request path '/swagger/index.js'
+2025-02-18 14:42:00.199 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 14:42:00.200 +06:00 [DBG] Connection id "0HNAFV0E296NQ" completed keep alive response.
+2025-02-18 14:42:00.200 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/index.js - 200 null application/javascript;charset=utf-8 1.9859ms
+2025-02-18 14:42:00.289 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/openapi/v1.json - null null
+2025-02-18 14:42:00.292 +06:00 [DBG] 1 candidate(s) found for the request path '/openapi/v1.json'
+2025-02-18 14:42:00.294 +06:00 [DBG] Endpoint 'HTTP: GET /openapi/{documentName}.json' with route pattern '/openapi/{documentName}.json' is valid for the request path '/openapi/v1.json'
+2025-02-18 14:42:00.295 +06:00 [DBG] Request matched endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 14:42:00.297 +06:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-18 14:42:00.297 +06:00 [WRN] Failed to determine the https port for redirect.
+2025-02-18 14:42:00.299 +06:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 14:42:00.311 +06:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-02-18 14:42:00.311 +06:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-02-18 14:42:00.315 +06:00 [DBG] Executing API description provider 'JsonPatchOperationsArrayProvider' from assembly Microsoft.AspNetCore.Mvc.NewtonsoftJson v9.0.1.0.
+2025-02-18 14:42:00.449 +06:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 14:42:00.449 +06:00 [DBG] Connection id "0HNAFV0E296NQ" completed keep alive response.
+2025-02-18 14:42:00.449 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/openapi/v1.json - 200 null application/json;charset=utf-8 159.5819ms
+2025-02-18 14:42:09.571 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/getAllVillas - null null
+2025-02-18 14:42:09.571 +06:00 [DBG] 1 candidate(s) found for the request path '/getAllVillas'
+2025-02-18 14:42:09.571 +06:00 [DBG] Endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)' with route pattern 'getAllVillas' is valid for the request path '/getAllVillas'
+2025-02-18 14:42:09.571 +06:00 [DBG] Request matched endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)'
+2025-02-18 14:42:09.571 +06:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-18 14:42:09.571 +06:00 [INF] Executing endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)'
+2025-02-18 14:42:09.588 +06:00 [INF] Route matched with {action = "GetAllVilla", controller = "VillaApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_API.Models.Dto.VillaDto]] GetAllVilla() on controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API).
+2025-02-18 14:42:09.589 +06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-18 14:42:09.589 +06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-18 14:42:09.590 +06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-18 14:42:09.590 +06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-18 14:42:09.590 +06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-18 14:42:09.591 +06:00 [DBG] Executing controller factory for controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API)
+2025-02-18 14:42:09.659 +06:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-18 14:42:09.675 +06:00 [DBG] Executed controller factory for controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API)
+2025-02-18 14:42:09.684 +06:00 [INF] Executing action method MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API) - Validation state: "Valid"
+2025-02-18 14:42:10.068 +06:00 [DBG] Entity Framework Core 9.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.2' with options: EngineType=SqlServer 
+2025-02-18 14:42:10.094 +06:00 [DBG] Compiling query expression: 
+'DbSet<Villa>()'
+2025-02-18 14:42:10.256 +06:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Villa>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Villa.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Villa.CreatedDate (DateTime) Required, 1], [Property: Villa.Details (string) Required, 2], [Property: Villa.Image (string) Required, 3], [Property: Villa.Name (string) Required MaxLength(50), 4], [Property: Villa.Occupancy (int) Required, 5], [Property: Villa.Rate (double) Required, 6], [Property: Villa.Sqft (int) Required, 7], [Property: Villa.UpdatedDate (DateTime) Required, 8] }
+        SELECT v.Id, v.CreatedDate, v.Details, v.Image, v.Name, v.Occupancy, v.Rate, v.Sqft, v.UpdatedDate
+        FROM Villas AS v) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Villa.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Villa.CreatedDate (DateTime) Required, 1], [Property: Villa.Details (string) Required, 2], [Property: Villa.Image (string) Required, 3], [Property: Villa.Name (string) Required MaxLength(50), 4], [Property: Villa.Occupancy (int) Required, 5], [Property: Villa.Rate (double) Required, 6], [Property: Villa.Sqft (int) Required, 7], [Property: Villa.UpdatedDate (DateTime) Required, 8] }
+        SELECT v.Id, v.CreatedDate, v.Details, v.Image, v.Name, v.Occupancy, v.Rate, v.Sqft, v.UpdatedDate
+        FROM Villas AS v, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Villa entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Villa instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Villa);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Villa.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Villa)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Villa | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Villa | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa")]: 
+                        {
+                            return 
+                            {
+                                Villa instance;
+                                instance = new Villa();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<CreatedDate>k__BackingField = dataReader.GetDateTime(1);
+                                instance.<Details>k__BackingField = dataReader.GetString(2);
+                                instance.<Image>k__BackingField = dataReader.GetString(3);
+                                instance.<Name>k__BackingField = dataReader.GetString(4);
+                                instance.<Occupancy>k__BackingField = dataReader.GetInt32(5);
+                                instance.<Rate>k__BackingField = dataReader.GetDouble(6);
+                                instance.<Sqft>k__BackingField = dataReader.GetInt32(7);
+                                instance.<UpdatedDate>k__BackingField = dataReader.GetDateTime(8);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Villa | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Villa)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: MagicVilla_API.Data.ApplicationDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-02-18 14:42:10.277 +06:00 [DBG] Creating DbConnection.
+2025-02-18 14:42:10.295 +06:00 [DBG] Created DbConnection. (15ms).
+2025-02-18 14:42:10.297 +06:00 [DBG] Opening connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:42:10.440 +06:00 [DBG] Opened connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:42:10.443 +06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-18 14:42:10.449 +06:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2025-02-18 14:42:10.450 +06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (7ms).
+2025-02-18 14:42:10.455 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedDate], [v].[Details], [v].[Image], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2025-02-18 14:42:10.477 +06:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedDate], [v].[Details], [v].[Image], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2025-02-18 14:42:10.498 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:42:10.517 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:42:10.517 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:42:10.517 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:42:10.517 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:42:10.519 +06:00 [DBG] Closing data reader to 'MagicVilla' on server 'localhost'.
+2025-02-18 14:42:10.524 +06:00 [DBG] A data reader for 'MagicVilla' on server 'localhost' is being disposed after spending 42ms reading results.
+2025-02-18 14:42:10.527 +06:00 [DBG] Closing connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:42:10.532 +06:00 [DBG] Closed connection to database 'MagicVilla' on server 'localhost' (5ms).
+2025-02-18 14:42:10.534 +06:00 [INF] Executed action method MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 847.8971ms.
+2025-02-18 14:42:10.537 +06:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2025-02-18 14:42:10.538 +06:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-02-18 14:42:10.539 +06:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-02-18 14:42:10.539 +06:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-18 14:42:10.539 +06:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-18 14:42:10.539 +06:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-02-18 14:42:10.539 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_API.Models.Villa, MagicVilla_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 14:42:10.608 +06:00 [INF] Executed action MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API) in 1015.7759ms
+2025-02-18 14:42:10.609 +06:00 [INF] Executed endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)'
+2025-02-18 14:42:10.609 +06:00 [DBG] Connection id "0HNAFV0E296NQ" completed keep alive response.
+2025-02-18 14:42:10.610 +06:00 [DBG] 'ApplicationDbContext' disposed.
+2025-02-18 14:42:10.613 +06:00 [DBG] Disposing connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:42:10.615 +06:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2025-02-18 14:42:10.615 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/getAllVillas - 200 1070 application/json; charset=utf-8 1044.4336ms
+2025-02-18 14:43:32.876 +06:00 [INF] Application is shutting down...
+2025-02-18 14:43:32.879 +06:00 [DBG] Hosting stopping
+2025-02-18 14:43:32.884 +06:00 [DBG] Connection id "0HNAFV0E296NQ" disconnecting.
+2025-02-18 14:43:32.885 +06:00 [DBG] Connection id "0HNAFV0E296NQ" stopped.
+2025-02-18 14:43:32.885 +06:00 [DBG] Connection id "0HNAFV0E296NQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-18 14:43:32.889 +06:00 [DBG] Hosting stopped
+2025-02-18 14:43:35.731 +06:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-02-18 14:43:35.791 +06:00 [DBG] Hosting starting
+2025-02-18 14:43:35.846 +06:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-02-18 14:43:35.848 +06:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-02-18 14:43:35.859 +06:00 [INF] Now listening on: http://localhost:5064
+2025-02-18 14:43:35.859 +06:00 [DBG] Loaded hosting startup assembly MagicVilla_API
+2025-02-18 14:43:35.860 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 14:43:35.860 +06:00 [INF] Hosting environment: Development
+2025-02-18 14:43:35.860 +06:00 [INF] Content root path: C:\Users\Azim\Desktop\.NET-API-WORK\MagicVilla_API
+2025-02-18 14:43:35.860 +06:00 [DBG] Hosting started
+2025-02-18 14:43:35.893 +06:00 [DBG] Connection id "0HNAFV1ALK295" received FIN.
+2025-02-18 14:43:35.897 +06:00 [DBG] Connection id "0HNAFV1ALK295" accepted.
+2025-02-18 14:43:35.897 +06:00 [DBG] Connection id "0HNAFV1ALK295" started.
+2025-02-18 14:43:35.903 +06:00 [DBG] Connection id "0HNAFV1ALK295" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-18 14:43:35.905 +06:00 [DBG] Connection id "0HNAFV1ALK295" disconnecting.
+2025-02-18 14:43:35.908 +06:00 [DBG] Connection id "0HNAFV1ALK295" stopped.
+2025-02-18 14:43:36.010 +06:00 [DBG] Connection id "0HNAFV1ALK296" accepted.
+2025-02-18 14:43:36.010 +06:00 [DBG] Connection id "0HNAFV1ALK296" started.
+2025-02-18 14:43:36.024 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/index.html - null null
+2025-02-18 14:43:36.037 +06:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-02-18 14:43:36.038 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 14:43:36.110 +06:00 [DBG] Connection id "0HNAFV1ALK296" completed keep alive response.
+2025-02-18 14:43:36.111 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/index.html - 200 null text/html;charset=utf-8 88.4036ms
+2025-02-18 14:43:36.148 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/index.js - null null
+2025-02-18 14:43:36.148 +06:00 [DBG] No candidates found for the request path '/swagger/index.js'
+2025-02-18 14:43:36.148 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 14:43:36.153 +06:00 [DBG] Connection id "0HNAFV1ALK296" completed keep alive response.
+2025-02-18 14:43:36.153 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/index.js - 200 null application/javascript;charset=utf-8 5.6507ms
+2025-02-18 14:43:36.237 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/openapi/v1.json - null null
+2025-02-18 14:43:36.240 +06:00 [DBG] 1 candidate(s) found for the request path '/openapi/v1.json'
+2025-02-18 14:43:36.244 +06:00 [DBG] Endpoint 'HTTP: GET /openapi/{documentName}.json' with route pattern '/openapi/{documentName}.json' is valid for the request path '/openapi/v1.json'
+2025-02-18 14:43:36.244 +06:00 [DBG] Request matched endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 14:43:36.246 +06:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-18 14:43:36.247 +06:00 [WRN] Failed to determine the https port for redirect.
+2025-02-18 14:43:36.249 +06:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 14:43:36.265 +06:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-02-18 14:43:36.265 +06:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-02-18 14:43:36.270 +06:00 [DBG] Executing API description provider 'JsonPatchOperationsArrayProvider' from assembly Microsoft.AspNetCore.Mvc.NewtonsoftJson v9.0.1.0.
+2025-02-18 14:43:36.387 +06:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 14:43:36.388 +06:00 [DBG] Connection id "0HNAFV1ALK296" completed keep alive response.
+2025-02-18 14:43:36.388 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/openapi/v1.json - 200 null application/json;charset=utf-8 151.0897ms
+2025-02-18 14:43:40.695 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/api/VillaAPI/getAllVillas - null null
+2025-02-18 14:43:40.695 +06:00 [DBG] 1 candidate(s) found for the request path '/api/VillaAPI/getAllVillas'
+2025-02-18 14:43:40.695 +06:00 [DBG] Endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)' with route pattern 'api/VillaAPI/getAllVillas' is valid for the request path '/api/VillaAPI/getAllVillas'
+2025-02-18 14:43:40.696 +06:00 [DBG] Request matched endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)'
+2025-02-18 14:43:40.696 +06:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-18 14:43:40.696 +06:00 [INF] Executing endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)'
+2025-02-18 14:43:40.712 +06:00 [INF] Route matched with {action = "GetAllVilla", controller = "VillaApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_API.Models.Dto.VillaDto]] GetAllVilla() on controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API).
+2025-02-18 14:43:40.713 +06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-18 14:43:40.713 +06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-18 14:43:40.713 +06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-18 14:43:40.713 +06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-18 14:43:40.713 +06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-18 14:43:40.714 +06:00 [DBG] Executing controller factory for controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API)
+2025-02-18 14:43:40.782 +06:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-18 14:43:40.804 +06:00 [DBG] Executed controller factory for controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API)
+2025-02-18 14:43:40.808 +06:00 [INF] Executing action method MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API) - Validation state: "Valid"
+2025-02-18 14:43:41.202 +06:00 [DBG] Entity Framework Core 9.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.2' with options: EngineType=SqlServer 
+2025-02-18 14:43:41.229 +06:00 [DBG] Compiling query expression: 
+'DbSet<Villa>()'
+2025-02-18 14:43:41.394 +06:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Villa>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Villa.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Villa.CreatedDate (DateTime) Required, 1], [Property: Villa.Details (string) Required, 2], [Property: Villa.Image (string) Required, 3], [Property: Villa.Name (string) Required MaxLength(50), 4], [Property: Villa.Occupancy (int) Required, 5], [Property: Villa.Rate (double) Required, 6], [Property: Villa.Sqft (int) Required, 7], [Property: Villa.UpdatedDate (DateTime) Required, 8] }
+        SELECT v.Id, v.CreatedDate, v.Details, v.Image, v.Name, v.Occupancy, v.Rate, v.Sqft, v.UpdatedDate
+        FROM Villas AS v) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Villa.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Villa.CreatedDate (DateTime) Required, 1], [Property: Villa.Details (string) Required, 2], [Property: Villa.Image (string) Required, 3], [Property: Villa.Name (string) Required MaxLength(50), 4], [Property: Villa.Occupancy (int) Required, 5], [Property: Villa.Rate (double) Required, 6], [Property: Villa.Sqft (int) Required, 7], [Property: Villa.UpdatedDate (DateTime) Required, 8] }
+        SELECT v.Id, v.CreatedDate, v.Details, v.Image, v.Name, v.Occupancy, v.Rate, v.Sqft, v.UpdatedDate
+        FROM Villas AS v, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Villa entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Villa instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Villa);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Villa.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Villa)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Villa | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Villa | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa")]: 
+                        {
+                            return 
+                            {
+                                Villa instance;
+                                instance = new Villa();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<CreatedDate>k__BackingField = dataReader.GetDateTime(1);
+                                instance.<Details>k__BackingField = dataReader.GetString(2);
+                                instance.<Image>k__BackingField = dataReader.GetString(3);
+                                instance.<Name>k__BackingField = dataReader.GetString(4);
+                                instance.<Occupancy>k__BackingField = dataReader.GetInt32(5);
+                                instance.<Rate>k__BackingField = dataReader.GetDouble(6);
+                                instance.<Sqft>k__BackingField = dataReader.GetInt32(7);
+                                instance.<UpdatedDate>k__BackingField = dataReader.GetDateTime(8);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Villa | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Villa)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: MagicVilla_API.Data.ApplicationDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-02-18 14:43:41.414 +06:00 [DBG] Creating DbConnection.
+2025-02-18 14:43:41.431 +06:00 [DBG] Created DbConnection. (15ms).
+2025-02-18 14:43:41.433 +06:00 [DBG] Opening connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:43:41.584 +06:00 [DBG] Opened connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:43:41.587 +06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-18 14:43:41.593 +06:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2025-02-18 14:43:41.594 +06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (7ms).
+2025-02-18 14:43:41.599 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedDate], [v].[Details], [v].[Image], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2025-02-18 14:43:41.623 +06:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedDate], [v].[Details], [v].[Image], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2025-02-18 14:43:41.647 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:43:41.667 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:43:41.667 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:43:41.667 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:43:41.667 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:43:41.670 +06:00 [DBG] Closing data reader to 'MagicVilla' on server 'localhost'.
+2025-02-18 14:43:41.675 +06:00 [DBG] A data reader for 'MagicVilla' on server 'localhost' is being disposed after spending 46ms reading results.
+2025-02-18 14:43:41.677 +06:00 [DBG] Closing connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:43:41.682 +06:00 [DBG] Closed connection to database 'MagicVilla' on server 'localhost' (4ms).
+2025-02-18 14:43:41.685 +06:00 [INF] Executed action method MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 874.5049ms.
+2025-02-18 14:43:41.688 +06:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2025-02-18 14:43:41.689 +06:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-02-18 14:43:41.690 +06:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-02-18 14:43:41.690 +06:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-18 14:43:41.690 +06:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-18 14:43:41.690 +06:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-02-18 14:43:41.691 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_API.Models.Villa, MagicVilla_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 14:43:41.765 +06:00 [INF] Executed action MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API) in 1049.0098ms
+2025-02-18 14:43:41.765 +06:00 [INF] Executed endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)'
+2025-02-18 14:43:41.765 +06:00 [DBG] Connection id "0HNAFV1ALK296" completed keep alive response.
+2025-02-18 14:43:41.767 +06:00 [DBG] 'ApplicationDbContext' disposed.
+2025-02-18 14:43:41.770 +06:00 [DBG] Disposing connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:43:41.772 +06:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2025-02-18 14:43:41.772 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/api/VillaAPI/getAllVillas - 200 1070 application/json; charset=utf-8 1077.4579ms
+2025-02-18 14:43:43.056 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/api/VillaAPI/getAllVillas - null null
+2025-02-18 14:43:43.057 +06:00 [DBG] 1 candidate(s) found for the request path '/api/VillaAPI/getAllVillas'
+2025-02-18 14:43:43.057 +06:00 [DBG] Endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)' with route pattern 'api/VillaAPI/getAllVillas' is valid for the request path '/api/VillaAPI/getAllVillas'
+2025-02-18 14:43:43.057 +06:00 [DBG] Request matched endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)'
+2025-02-18 14:43:43.057 +06:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-18 14:43:43.057 +06:00 [INF] Executing endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)'
+2025-02-18 14:43:43.058 +06:00 [INF] Route matched with {action = "GetAllVilla", controller = "VillaApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_API.Models.Dto.VillaDto]] GetAllVilla() on controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API).
+2025-02-18 14:43:43.058 +06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-18 14:43:43.058 +06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-18 14:43:43.058 +06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-18 14:43:43.058 +06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-18 14:43:43.058 +06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-18 14:43:43.058 +06:00 [DBG] Executing controller factory for controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API)
+2025-02-18 14:43:43.059 +06:00 [DBG] Executed controller factory for controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API)
+2025-02-18 14:43:43.059 +06:00 [INF] Executing action method MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API) - Validation state: "Valid"
+2025-02-18 14:43:43.073 +06:00 [DBG] Entity Framework Core 9.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.2' with options: EngineType=SqlServer 
+2025-02-18 14:43:43.074 +06:00 [DBG] Creating DbConnection.
+2025-02-18 14:43:43.074 +06:00 [DBG] Created DbConnection. (0ms).
+2025-02-18 14:43:43.074 +06:00 [DBG] Opening connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:43:43.075 +06:00 [DBG] Opened connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:43:43.075 +06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-18 14:43:43.075 +06:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-18 14:43:43.075 +06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-02-18 14:43:43.075 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedDate], [v].[Details], [v].[Image], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2025-02-18 14:43:43.077 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedDate], [v].[Details], [v].[Image], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2025-02-18 14:43:43.077 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:43:43.078 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:43:43.078 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:43:43.078 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:43:43.078 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:43:43.078 +06:00 [DBG] Closing data reader to 'MagicVilla' on server 'localhost'.
+2025-02-18 14:43:43.078 +06:00 [DBG] A data reader for 'MagicVilla' on server 'localhost' is being disposed after spending 0ms reading results.
+2025-02-18 14:43:43.078 +06:00 [DBG] Closing connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:43:43.078 +06:00 [DBG] Closed connection to database 'MagicVilla' on server 'localhost' (0ms).
+2025-02-18 14:43:43.078 +06:00 [INF] Executed action method MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 19.3536ms.
+2025-02-18 14:43:43.078 +06:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2025-02-18 14:43:43.079 +06:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-02-18 14:43:43.079 +06:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-02-18 14:43:43.079 +06:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-18 14:43:43.079 +06:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-18 14:43:43.079 +06:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-02-18 14:43:43.079 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_API.Models.Villa, MagicVilla_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 14:43:43.079 +06:00 [INF] Executed action MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API) in 21.3471ms
+2025-02-18 14:43:43.079 +06:00 [INF] Executed endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)'
+2025-02-18 14:43:43.079 +06:00 [DBG] Connection id "0HNAFV1ALK296" completed keep alive response.
+2025-02-18 14:43:43.079 +06:00 [DBG] 'ApplicationDbContext' disposed.
+2025-02-18 14:43:43.079 +06:00 [DBG] Disposing connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:43:43.079 +06:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2025-02-18 14:43:43.079 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/api/VillaAPI/getAllVillas - 200 1070 application/json; charset=utf-8 23.1302ms
+2025-02-18 14:43:57.882 +06:00 [INF] Application is shutting down...
+2025-02-18 14:43:57.883 +06:00 [DBG] Hosting stopping
+2025-02-18 14:43:57.886 +06:00 [DBG] Connection id "0HNAFV1ALK296" disconnecting.
+2025-02-18 14:43:57.887 +06:00 [DBG] Connection id "0HNAFV1ALK296" stopped.
+2025-02-18 14:43:57.887 +06:00 [DBG] Connection id "0HNAFV1ALK296" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-18 14:43:57.890 +06:00 [DBG] Hosting stopped
+2025-02-18 14:44:00.765 +06:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-02-18 14:44:00.812 +06:00 [DBG] Hosting starting
+2025-02-18 14:44:00.867 +06:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-02-18 14:44:00.869 +06:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-02-18 14:44:00.878 +06:00 [INF] Now listening on: http://localhost:5064
+2025-02-18 14:44:00.878 +06:00 [DBG] Loaded hosting startup assembly MagicVilla_API
+2025-02-18 14:44:00.878 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 14:44:00.879 +06:00 [INF] Hosting environment: Development
+2025-02-18 14:44:00.879 +06:00 [INF] Content root path: C:\Users\Azim\Desktop\.NET-API-WORK\MagicVilla_API
+2025-02-18 14:44:00.879 +06:00 [DBG] Hosting started
+2025-02-18 14:44:00.974 +06:00 [DBG] Connection id "0HNAFV1I4QANE" received FIN.
+2025-02-18 14:44:00.977 +06:00 [DBG] Connection id "0HNAFV1I4QANE" accepted.
+2025-02-18 14:44:00.977 +06:00 [DBG] Connection id "0HNAFV1I4QANE" started.
+2025-02-18 14:44:00.982 +06:00 [DBG] Connection id "0HNAFV1I4QANE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-18 14:44:00.983 +06:00 [DBG] Connection id "0HNAFV1I4QANE" disconnecting.
+2025-02-18 14:44:00.985 +06:00 [DBG] Connection id "0HNAFV1I4QANE" stopped.
+2025-02-18 14:44:01.125 +06:00 [DBG] Connection id "0HNAFV1I4QANF" accepted.
+2025-02-18 14:44:01.125 +06:00 [DBG] Connection id "0HNAFV1I4QANF" started.
+2025-02-18 14:44:01.141 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/index.html - null null
+2025-02-18 14:44:01.155 +06:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-02-18 14:44:01.156 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 14:44:01.229 +06:00 [DBG] Connection id "0HNAFV1I4QANF" completed keep alive response.
+2025-02-18 14:44:01.230 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/index.html - 200 null text/html;charset=utf-8 91.2921ms
+2025-02-18 14:44:01.256 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/index.js - null null
+2025-02-18 14:44:01.257 +06:00 [DBG] No candidates found for the request path '/swagger/index.js'
+2025-02-18 14:44:01.257 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 14:44:01.259 +06:00 [DBG] Connection id "0HNAFV1I4QANF" completed keep alive response.
+2025-02-18 14:44:01.259 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/index.js - 200 null application/javascript;charset=utf-8 2.9585ms
+2025-02-18 14:44:01.354 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/openapi/v1.json - null null
+2025-02-18 14:44:01.357 +06:00 [DBG] 1 candidate(s) found for the request path '/openapi/v1.json'
+2025-02-18 14:44:01.359 +06:00 [DBG] Endpoint 'HTTP: GET /openapi/{documentName}.json' with route pattern '/openapi/{documentName}.json' is valid for the request path '/openapi/v1.json'
+2025-02-18 14:44:01.359 +06:00 [DBG] Request matched endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 14:44:01.361 +06:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-18 14:44:01.362 +06:00 [WRN] Failed to determine the https port for redirect.
+2025-02-18 14:44:01.363 +06:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 14:44:01.375 +06:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-02-18 14:44:01.375 +06:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-02-18 14:44:01.378 +06:00 [DBG] Executing API description provider 'JsonPatchOperationsArrayProvider' from assembly Microsoft.AspNetCore.Mvc.NewtonsoftJson v9.0.1.0.
+2025-02-18 14:44:01.497 +06:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 14:44:01.497 +06:00 [DBG] Connection id "0HNAFV1I4QANF" completed keep alive response.
+2025-02-18 14:44:01.497 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/openapi/v1.json - 200 null application/json;charset=utf-8 143.2464ms
+2025-02-18 14:45:24.023 +06:00 [INF] Request starting HTTP/1.1 POST http://localhost:5064/api/VillaAPI/createVilla - application/json-patch+json 166
+2025-02-18 14:45:24.024 +06:00 [DBG] 1 candidate(s) found for the request path '/api/VillaAPI/createVilla'
+2025-02-18 14:45:24.024 +06:00 [DBG] Endpoint 'MagicVilla_API.Controllers.VillaApiController.CreateVilla (MagicVilla_API)' with route pattern 'api/VillaAPI/createVilla' is valid for the request path '/api/VillaAPI/createVilla'
+2025-02-18 14:45:24.024 +06:00 [DBG] Request matched endpoint 'MagicVilla_API.Controllers.VillaApiController.CreateVilla (MagicVilla_API)'
+2025-02-18 14:45:24.025 +06:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-18 14:45:24.025 +06:00 [INF] Executing endpoint 'MagicVilla_API.Controllers.VillaApiController.CreateVilla (MagicVilla_API)'
+2025-02-18 14:45:24.044 +06:00 [INF] Route matched with {action = "CreateVilla", controller = "VillaApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MagicVilla_API.Models.Dto.VillaDto] CreateVilla(MagicVilla_API.Models.Dto.VillaDto) on controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API).
+2025-02-18 14:45:24.045 +06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-18 14:45:24.045 +06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-18 14:45:24.045 +06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-18 14:45:24.045 +06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-18 14:45:24.046 +06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-18 14:45:24.046 +06:00 [DBG] Executing controller factory for controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API)
+2025-02-18 14:45:24.123 +06:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-18 14:45:24.139 +06:00 [DBG] Executed controller factory for controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API)
+2025-02-18 14:45:24.141 +06:00 [DBG] Attempting to bind parameter 'villaDto' of type 'MagicVilla_API.Models.Dto.VillaDto' ...
+2025-02-18 14:45:24.142 +06:00 [DBG] Attempting to bind parameter 'villaDto' of type 'MagicVilla_API.Models.Dto.VillaDto' using the name '' in request data ...
+2025-02-18 14:45:24.143 +06:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2025-02-18 14:45:24.143 +06:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2025-02-18 14:45:24.146 +06:00 [DBG] Connection id "0HNAFV1I4QANF", Request id "0HNAFV1I4QANF:00000004": started reading request body.
+2025-02-18 14:45:24.146 +06:00 [DBG] Connection id "0HNAFV1I4QANF", Request id "0HNAFV1I4QANF:00000004": done reading request body.
+2025-02-18 14:45:24.206 +06:00 [DBG] Done attempting to bind parameter 'villaDto' of type 'MagicVilla_API.Models.Dto.VillaDto'.
+2025-02-18 14:45:24.206 +06:00 [DBG] Done attempting to bind parameter 'villaDto' of type 'MagicVilla_API.Models.Dto.VillaDto'.
+2025-02-18 14:45:24.206 +06:00 [DBG] Attempting to validate the bound parameter 'villaDto' of type 'MagicVilla_API.Models.Dto.VillaDto' ...
+2025-02-18 14:45:24.210 +06:00 [DBG] Done attempting to validate the bound parameter 'villaDto' of type 'MagicVilla_API.Models.Dto.VillaDto'.
+2025-02-18 14:45:24.216 +06:00 [INF] Executing action method MagicVilla_API.Controllers.VillaApiController.CreateVilla (MagicVilla_API) - Validation state: "Valid"
+2025-02-18 14:45:24.612 +06:00 [DBG] Entity Framework Core 9.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.2' with options: EngineType=SqlServer 
+2025-02-18 14:45:24.636 +06:00 [DBG] 'ApplicationDbContext' generated a temporary value for the property 'Villa.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:45:24.671 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:45:24.673 +06:00 [DBG] SaveChanges starting for 'ApplicationDbContext'.
+2025-02-18 14:45:24.675 +06:00 [DBG] DetectChanges starting for 'ApplicationDbContext'.
+2025-02-18 14:45:24.688 +06:00 [DBG] DetectChanges completed for 'ApplicationDbContext'.
+2025-02-18 14:45:24.779 +06:00 [DBG] Creating DbConnection.
+2025-02-18 14:45:24.797 +06:00 [DBG] Created DbConnection. (16ms).
+2025-02-18 14:45:24.798 +06:00 [DBG] Opening connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:45:24.935 +06:00 [DBG] Opened connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:45:24.940 +06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-18 14:45:24.945 +06:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2025-02-18 14:45:24.952 +06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (11ms).
+2025-02-18 14:45:24.958 +06:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 50), @p4='?' (DbType = Int32), @p5='?' (DbType = Double), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Villas] ([CreatedDate], [Details], [Image], [Name], [Occupancy], [Rate], [Sqft], [UpdatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-02-18 14:45:25.001 +06:00 [INF] Executed DbCommand (44ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 50), @p4='?' (DbType = Int32), @p5='?' (DbType = Double), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Villas] ([CreatedDate], [Details], [Image], [Name], [Occupancy], [Rate], [Sqft], [UpdatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-02-18 14:45:25.015 +06:00 [DBG] The foreign key property 'Villa.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-02-18 14:45:25.021 +06:00 [DBG] Closing data reader to 'MagicVilla' on server 'localhost'.
+2025-02-18 14:45:25.027 +06:00 [DBG] A data reader for 'MagicVilla' on server 'localhost' is being disposed after spending 19ms reading results.
+2025-02-18 14:45:25.029 +06:00 [DBG] Closing connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:45:25.035 +06:00 [DBG] Closed connection to database 'MagicVilla' on server 'localhost' (5ms).
+2025-02-18 14:45:25.043 +06:00 [DBG] An entity of type 'Villa' tracked by 'ApplicationDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:45:25.044 +06:00 [DBG] SaveChanges completed for 'ApplicationDbContext' with 1 entities written to the database.
+2025-02-18 14:45:25.046 +06:00 [INF] Executed action method MagicVilla_API.Controllers.VillaApiController.CreateVilla (MagicVilla_API), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 827.6988ms.
+2025-02-18 14:45:25.049 +06:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2025-02-18 14:45:25.050 +06:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-02-18 14:45:25.051 +06:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-02-18 14:45:25.051 +06:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-18 14:45:25.051 +06:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-18 14:45:25.051 +06:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-02-18 14:45:25.051 +06:00 [INF] Executing CreatedAtRouteResult, writing value of type 'MagicVilla_API.Models.Dto.VillaDto'.
+2025-02-18 14:45:25.062 +06:00 [DBG] Found the endpoints ["MagicVilla_API.Controllers.VillaApiController.GetVilla (MagicVilla_API)"] for address GetVillaById(id=[0])
+2025-02-18 14:45:25.064 +06:00 [DBG] Successfully processed template api/VillaAPI/{id:int} for MagicVilla_API.Controllers.VillaApiController.GetVilla (MagicVilla_API) resulting in /api/VillaAPI/0 and 
+2025-02-18 14:45:25.064 +06:00 [DBG] Link generation succeeded for endpoints ["MagicVilla_API.Controllers.VillaApiController.GetVilla (MagicVilla_API)"] with result /api/VillaAPI/0
+2025-02-18 14:45:25.090 +06:00 [INF] Executed action MagicVilla_API.Controllers.VillaApiController.CreateVilla (MagicVilla_API) in 1041.8552ms
+2025-02-18 14:45:25.090 +06:00 [INF] Executed endpoint 'MagicVilla_API.Controllers.VillaApiController.CreateVilla (MagicVilla_API)'
+2025-02-18 14:45:25.090 +06:00 [DBG] Connection id "0HNAFV1I4QANF" completed keep alive response.
+2025-02-18 14:45:25.091 +06:00 [DBG] 'ApplicationDbContext' disposed.
+2025-02-18 14:45:25.094 +06:00 [DBG] Disposing connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:45:25.096 +06:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2025-02-18 14:45:25.097 +06:00 [INF] Request finished HTTP/1.1 POST http://localhost:5064/api/VillaAPI/createVilla - 201 139 application/json; charset=utf-8 1073.5936ms
+2025-02-18 14:46:08.357 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/api/VillaAPI/getAllVillas - null null
+2025-02-18 14:46:08.357 +06:00 [DBG] 1 candidate(s) found for the request path '/api/VillaAPI/getAllVillas'
+2025-02-18 14:46:08.357 +06:00 [DBG] Endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)' with route pattern 'api/VillaAPI/getAllVillas' is valid for the request path '/api/VillaAPI/getAllVillas'
+2025-02-18 14:46:08.358 +06:00 [DBG] Request matched endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)'
+2025-02-18 14:46:08.358 +06:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-18 14:46:08.358 +06:00 [INF] Executing endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)'
+2025-02-18 14:46:08.359 +06:00 [INF] Route matched with {action = "GetAllVilla", controller = "VillaApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_API.Models.Dto.VillaDto]] GetAllVilla() on controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API).
+2025-02-18 14:46:08.359 +06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-18 14:46:08.359 +06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-18 14:46:08.359 +06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-18 14:46:08.359 +06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-18 14:46:08.359 +06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-18 14:46:08.359 +06:00 [DBG] Executing controller factory for controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API)
+2025-02-18 14:46:08.360 +06:00 [DBG] Executed controller factory for controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API)
+2025-02-18 14:46:08.360 +06:00 [INF] Executing action method MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API) - Validation state: "Valid"
+2025-02-18 14:46:08.397 +06:00 [DBG] Entity Framework Core 9.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.2' with options: EngineType=SqlServer 
+2025-02-18 14:46:08.421 +06:00 [DBG] Compiling query expression: 
+'DbSet<Villa>()'
+2025-02-18 14:46:08.553 +06:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Villa>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Villa.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Villa.CreatedDate (DateTime) Required, 1], [Property: Villa.Details (string) Required, 2], [Property: Villa.Image (string) Required, 3], [Property: Villa.Name (string) Required MaxLength(50), 4], [Property: Villa.Occupancy (int) Required, 5], [Property: Villa.Rate (double) Required, 6], [Property: Villa.Sqft (int) Required, 7], [Property: Villa.UpdatedDate (DateTime) Required, 8] }
+        SELECT v.Id, v.CreatedDate, v.Details, v.Image, v.Name, v.Occupancy, v.Rate, v.Sqft, v.UpdatedDate
+        FROM Villas AS v) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Villa.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Villa.CreatedDate (DateTime) Required, 1], [Property: Villa.Details (string) Required, 2], [Property: Villa.Image (string) Required, 3], [Property: Villa.Name (string) Required MaxLength(50), 4], [Property: Villa.Occupancy (int) Required, 5], [Property: Villa.Rate (double) Required, 6], [Property: Villa.Sqft (int) Required, 7], [Property: Villa.UpdatedDate (DateTime) Required, 8] }
+        SELECT v.Id, v.CreatedDate, v.Details, v.Image, v.Name, v.Occupancy, v.Rate, v.Sqft, v.UpdatedDate
+        FROM Villas AS v, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Villa entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Villa instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Villa);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Villa.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Villa)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Villa | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Villa | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa")]: 
+                        {
+                            return 
+                            {
+                                Villa instance;
+                                instance = new Villa();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<CreatedDate>k__BackingField = dataReader.GetDateTime(1);
+                                instance.<Details>k__BackingField = dataReader.GetString(2);
+                                instance.<Image>k__BackingField = dataReader.GetString(3);
+                                instance.<Name>k__BackingField = dataReader.GetString(4);
+                                instance.<Occupancy>k__BackingField = dataReader.GetInt32(5);
+                                instance.<Rate>k__BackingField = dataReader.GetDouble(6);
+                                instance.<Sqft>k__BackingField = dataReader.GetInt32(7);
+                                instance.<UpdatedDate>k__BackingField = dataReader.GetDateTime(8);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Villa | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Villa)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: MagicVilla_API.Data.ApplicationDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-02-18 14:46:08.571 +06:00 [DBG] Creating DbConnection.
+2025-02-18 14:46:08.571 +06:00 [DBG] Created DbConnection. (0ms).
+2025-02-18 14:46:08.571 +06:00 [DBG] Opening connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:46:08.572 +06:00 [DBG] Opened connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:46:08.572 +06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-18 14:46:08.572 +06:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-18 14:46:08.573 +06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-02-18 14:46:08.573 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedDate], [v].[Details], [v].[Image], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2025-02-18 14:46:08.587 +06:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedDate], [v].[Details], [v].[Image], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2025-02-18 14:46:08.591 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:46:08.592 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:46:08.592 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:46:08.592 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:46:08.592 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:46:08.592 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 14:46:08.593 +06:00 [DBG] Closing data reader to 'MagicVilla' on server 'localhost'.
+2025-02-18 14:46:08.593 +06:00 [DBG] A data reader for 'MagicVilla' on server 'localhost' is being disposed after spending 6ms reading results.
+2025-02-18 14:46:08.593 +06:00 [DBG] Closing connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:46:08.593 +06:00 [DBG] Closed connection to database 'MagicVilla' on server 'localhost' (0ms).
+2025-02-18 14:46:08.593 +06:00 [INF] Executed action method MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 233.1143ms.
+2025-02-18 14:46:08.594 +06:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2025-02-18 14:46:08.594 +06:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-02-18 14:46:08.594 +06:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-02-18 14:46:08.594 +06:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-18 14:46:08.594 +06:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-18 14:46:08.594 +06:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-02-18 14:46:08.594 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_API.Models.Villa, MagicVilla_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 14:46:08.609 +06:00 [INF] Executed action MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API) in 249.9813ms
+2025-02-18 14:46:08.609 +06:00 [INF] Executed endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)'
+2025-02-18 14:46:08.609 +06:00 [DBG] Connection id "0HNAFV1I4QANF" completed keep alive response.
+2025-02-18 14:46:08.609 +06:00 [DBG] 'ApplicationDbContext' disposed.
+2025-02-18 14:46:08.609 +06:00 [DBG] Disposing connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 14:46:08.609 +06:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2025-02-18 14:46:08.609 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/api/VillaAPI/getAllVillas - 200 1297 application/json; charset=utf-8 252.8645ms
+2025-02-18 14:48:04.205 +06:00 [DBG] Connection id "0HNAFV1I4QANF" received FIN.
+2025-02-18 14:48:04.206 +06:00 [DBG] Connection id "0HNAFV1I4QANF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-18 14:48:04.206 +06:00 [DBG] Connection id "0HNAFV1I4QANF" disconnecting.
+2025-02-18 14:48:04.207 +06:00 [DBG] Connection id "0HNAFV1I4QANF" stopped.
+2025-02-18 15:05:39.475 +06:00 [INF] Application is shutting down...
+2025-02-18 15:05:39.476 +06:00 [DBG] Hosting stopping
+2025-02-18 15:05:39.480 +06:00 [DBG] Hosting stopped
+2025-02-18 15:05:44.210 +06:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-02-18 15:05:44.276 +06:00 [DBG] Hosting starting
+2025-02-18 15:05:44.329 +06:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-02-18 15:05:44.332 +06:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-02-18 15:05:44.343 +06:00 [INF] Now listening on: http://localhost:5064
+2025-02-18 15:05:44.343 +06:00 [DBG] Loaded hosting startup assembly MagicVilla_API
+2025-02-18 15:05:44.343 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 15:05:44.344 +06:00 [INF] Hosting environment: Development
+2025-02-18 15:05:44.344 +06:00 [INF] Content root path: C:\Users\Azim\Desktop\.NET-API-WORK\MagicVilla_API
+2025-02-18 15:05:44.344 +06:00 [DBG] Hosting started
+2025-02-18 15:05:44.346 +06:00 [DBG] Connection id "0HNAFVDMINV4L" received FIN.
+2025-02-18 15:05:44.349 +06:00 [DBG] Connection id "0HNAFVDMINV4L" accepted.
+2025-02-18 15:05:44.350 +06:00 [DBG] Connection id "0HNAFVDMINV4L" started.
+2025-02-18 15:05:44.356 +06:00 [DBG] Connection id "0HNAFVDMINV4L" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-18 15:05:44.357 +06:00 [DBG] Connection id "0HNAFVDMINV4L" disconnecting.
+2025-02-18 15:05:44.360 +06:00 [DBG] Connection id "0HNAFVDMINV4L" stopped.
+2025-02-18 15:05:44.525 +06:00 [DBG] Connection id "0HNAFVDMINV4M" accepted.
+2025-02-18 15:05:44.525 +06:00 [DBG] Connection id "0HNAFVDMINV4M" started.
+2025-02-18 15:05:44.539 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/index.html - null null
+2025-02-18 15:05:44.553 +06:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-02-18 15:05:44.553 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 15:05:44.624 +06:00 [DBG] Connection id "0HNAFVDMINV4M" completed keep alive response.
+2025-02-18 15:05:44.625 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/index.html - 200 null text/html;charset=utf-8 87.3797ms
+2025-02-18 15:05:44.661 +06:00 [DBG] Connection id "0HNAFVDMINV4M" received FIN.
+2025-02-18 15:05:44.661 +06:00 [DBG] Connection id "0HNAFVDMINV4M" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-18 15:05:44.661 +06:00 [DBG] Connection id "0HNAFVDMINV4M" disconnecting.
+2025-02-18 15:05:44.662 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/swagger-ui.css - null null
+2025-02-18 15:05:44.662 +06:00 [DBG] Connection id "0HNAFVDMINV4N" accepted.
+2025-02-18 15:05:44.662 +06:00 [DBG] Connection id "0HNAFVDMINV4N" started.
+2025-02-18 15:05:44.662 +06:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2025-02-18 15:05:44.662 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 15:05:44.663 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/index.js - null null
+2025-02-18 15:05:44.663 +06:00 [DBG] No candidates found for the request path '/swagger/index.js'
+2025-02-18 15:05:44.663 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 15:05:44.666 +06:00 [DBG] Connection id "0HNAFVDMINV4N" completed keep alive response.
+2025-02-18 15:05:44.666 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/index.js - 200 null application/javascript;charset=utf-8 3.307ms
+2025-02-18 15:05:44.670 +06:00 [DBG] The file transmission was cancelled
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+2025-02-18 15:05:44.678 +06:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-02-18 15:05:44.678 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/swagger-ui.css - 499 152035 text/css 16.6097ms
+2025-02-18 15:05:44.680 +06:00 [DBG] Connection id "0HNAFVDMINV4M" stopped.
+2025-02-18 15:05:44.751 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/openapi/v1.json - null null
+2025-02-18 15:05:44.754 +06:00 [DBG] 1 candidate(s) found for the request path '/openapi/v1.json'
+2025-02-18 15:05:44.756 +06:00 [DBG] Endpoint 'HTTP: GET /openapi/{documentName}.json' with route pattern '/openapi/{documentName}.json' is valid for the request path '/openapi/v1.json'
+2025-02-18 15:05:44.756 +06:00 [DBG] Request matched endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 15:05:44.758 +06:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-18 15:05:44.758 +06:00 [WRN] Failed to determine the https port for redirect.
+2025-02-18 15:05:44.760 +06:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 15:05:44.771 +06:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-02-18 15:05:44.772 +06:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-02-18 15:05:44.776 +06:00 [DBG] Executing API description provider 'JsonPatchOperationsArrayProvider' from assembly Microsoft.AspNetCore.Mvc.NewtonsoftJson v9.0.1.0.
+2025-02-18 15:05:44.899 +06:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 15:05:44.900 +06:00 [DBG] Connection id "0HNAFVDMINV4N" completed keep alive response.
+2025-02-18 15:05:44.900 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/openapi/v1.json - 200 null application/json;charset=utf-8 148.7243ms
+2025-02-18 15:07:40.352 +06:00 [DBG] Connection id "0HNAFVDMINV4N" received FIN.
+2025-02-18 15:07:40.353 +06:00 [DBG] Connection id "0HNAFVDMINV4N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-18 15:07:40.353 +06:00 [DBG] Connection id "0HNAFVDMINV4N" disconnecting.
+2025-02-18 15:07:40.366 +06:00 [DBG] Connection id "0HNAFVDMINV4N" stopped.
+2025-02-18 15:10:07.034 +06:00 [DBG] Connection id "0HNAFVDMINV4O" accepted.
+2025-02-18 15:10:07.035 +06:00 [DBG] Connection id "0HNAFVDMINV4O" started.
+2025-02-18 15:10:07.035 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/openapi/v1.json - null null
+2025-02-18 15:10:07.035 +06:00 [DBG] 1 candidate(s) found for the request path '/openapi/v1.json'
+2025-02-18 15:10:07.035 +06:00 [DBG] Endpoint 'HTTP: GET /openapi/{documentName}.json' with route pattern '/openapi/{documentName}.json' is valid for the request path '/openapi/v1.json'
+2025-02-18 15:10:07.036 +06:00 [DBG] Request matched endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 15:10:07.036 +06:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-18 15:10:07.036 +06:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 15:10:07.047 +06:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 15:10:07.047 +06:00 [DBG] Connection id "0HNAFVDMINV4O" completed keep alive response.
+2025-02-18 15:10:07.047 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/openapi/v1.json - 200 null application/json;charset=utf-8 12.4275ms
+2025-02-18 15:10:07.082 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/favicon.ico - null null
+2025-02-18 15:10:07.082 +06:00 [DBG] No candidates found for the request path '/favicon.ico'
+2025-02-18 15:10:07.082 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 15:10:07.082 +06:00 [DBG] The request path  does not match the path filter
+2025-02-18 15:10:07.083 +06:00 [DBG] Connection id "0HNAFVDMINV4O" completed keep alive response.
+2025-02-18 15:10:07.083 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/favicon.ico - 404 0 null 1.0012ms
+2025-02-18 15:10:07.083 +06:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5064/favicon.ico, Response status code: 404
+2025-02-18 15:12:02.472 +06:00 [DBG] Connection id "0HNAFVDMINV4O" received FIN.
+2025-02-18 15:12:02.473 +06:00 [DBG] Connection id "0HNAFVDMINV4O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-18 15:12:02.473 +06:00 [DBG] Connection id "0HNAFVDMINV4O" disconnecting.
+2025-02-18 15:12:02.473 +06:00 [DBG] Connection id "0HNAFVDMINV4O" stopped.
+2025-02-18 15:39:17.863 +06:00 [INF] Application is shutting down...
+2025-02-18 15:39:17.865 +06:00 [DBG] Hosting stopping
+2025-02-18 15:39:17.879 +06:00 [DBG] Hosting stopped
+2025-02-18 15:42:03.341 +06:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-02-18 15:42:03.476 +06:00 [DBG] Hosting starting
+2025-02-18 15:42:03.536 +06:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-02-18 15:42:03.539 +06:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-02-18 15:42:03.550 +06:00 [INF] Now listening on: http://localhost:5064
+2025-02-18 15:42:03.550 +06:00 [DBG] Loaded hosting startup assembly MagicVilla_API
+2025-02-18 15:42:03.550 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 15:42:03.551 +06:00 [INF] Hosting environment: Development
+2025-02-18 15:42:03.551 +06:00 [INF] Content root path: C:\Users\Azim\Desktop\.NET-API-WORK\MagicVilla_API
+2025-02-18 15:42:03.551 +06:00 [DBG] Hosting started
+2025-02-18 15:42:04.059 +06:00 [DBG] Connection id "0HNAG02063G7N" received FIN.
+2025-02-18 15:42:04.062 +06:00 [DBG] Connection id "0HNAG02063G7N" accepted.
+2025-02-18 15:42:04.062 +06:00 [DBG] Connection id "0HNAG02063G7N" started.
+2025-02-18 15:42:04.069 +06:00 [DBG] Connection id "0HNAG02063G7N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-18 15:42:04.070 +06:00 [DBG] Connection id "0HNAG02063G7N" disconnecting.
+2025-02-18 15:42:04.072 +06:00 [DBG] Connection id "0HNAG02063G7N" stopped.
+2025-02-18 15:42:04.267 +06:00 [DBG] Connection id "0HNAG02063G7O" accepted.
+2025-02-18 15:42:04.267 +06:00 [DBG] Connection id "0HNAG02063G7O" started.
+2025-02-18 15:42:04.283 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/index.html - null null
+2025-02-18 15:42:04.299 +06:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-02-18 15:42:04.299 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 15:42:04.399 +06:00 [DBG] Connection id "0HNAG02063G7O" completed keep alive response.
+2025-02-18 15:42:04.401 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/index.html - 200 null text/html;charset=utf-8 118.6516ms
+2025-02-18 15:42:04.445 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/index.js - null null
+2025-02-18 15:42:04.445 +06:00 [DBG] No candidates found for the request path '/swagger/index.js'
+2025-02-18 15:42:04.446 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 15:42:04.449 +06:00 [DBG] Connection id "0HNAG02063G7O" completed keep alive response.
+2025-02-18 15:42:04.449 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/index.js - 200 null application/javascript;charset=utf-8 4.7184ms
+2025-02-18 15:42:04.512 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/swagger/favicon-32x32.png - null null
+2025-02-18 15:42:04.512 +06:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2025-02-18 15:42:04.512 +06:00 [DBG] Request did not match any endpoints
+2025-02-18 15:42:04.517 +06:00 [DBG] Connection id "0HNAG02063G7O" received FIN.
+2025-02-18 15:42:04.517 +06:00 [DBG] Connection id "0HNAG02063G7O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-18 15:42:04.517 +06:00 [DBG] Connection id "0HNAG02063G7O" disconnecting.
+2025-02-18 15:42:04.521 +06:00 [DBG] The file transmission was cancelled
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+2025-02-18 15:42:04.530 +06:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-02-18 15:42:04.530 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/swagger/favicon-32x32.png - 499 628 image/png 17.7083ms
+2025-02-18 15:42:04.531 +06:00 [DBG] Connection id "0HNAG02063G7O" stopped.
+2025-02-18 15:42:04.549 +06:00 [DBG] Connection id "0HNAG02063G7P" accepted.
+2025-02-18 15:42:04.549 +06:00 [DBG] Connection id "0HNAG02063G7P" started.
+2025-02-18 15:42:04.550 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/openapi/v1.json - null null
+2025-02-18 15:42:04.552 +06:00 [DBG] 1 candidate(s) found for the request path '/openapi/v1.json'
+2025-02-18 15:42:04.556 +06:00 [DBG] Endpoint 'HTTP: GET /openapi/{documentName}.json' with route pattern '/openapi/{documentName}.json' is valid for the request path '/openapi/v1.json'
+2025-02-18 15:42:04.556 +06:00 [DBG] Request matched endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 15:42:04.557 +06:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-18 15:42:04.558 +06:00 [WRN] Failed to determine the https port for redirect.
+2025-02-18 15:42:04.559 +06:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 15:42:04.571 +06:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-02-18 15:42:04.572 +06:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-02-18 15:42:04.577 +06:00 [DBG] Executing API description provider 'JsonPatchOperationsArrayProvider' from assembly Microsoft.AspNetCore.Mvc.NewtonsoftJson v9.0.1.0.
+2025-02-18 15:42:04.707 +06:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-18 15:42:04.707 +06:00 [DBG] Connection id "0HNAG02063G7P" completed keep alive response.
+2025-02-18 15:42:04.707 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/openapi/v1.json - 200 null application/json;charset=utf-8 157.2795ms
+2025-02-18 15:42:13.023 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5064/api/VillaAPI/getAllVillas - null null
+2025-02-18 15:42:13.024 +06:00 [DBG] 1 candidate(s) found for the request path '/api/VillaAPI/getAllVillas'
+2025-02-18 15:42:13.024 +06:00 [DBG] Endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)' with route pattern 'api/VillaAPI/getAllVillas' is valid for the request path '/api/VillaAPI/getAllVillas'
+2025-02-18 15:42:13.025 +06:00 [DBG] Request matched endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)'
+2025-02-18 15:42:13.025 +06:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-18 15:42:13.025 +06:00 [INF] Executing endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)'
+2025-02-18 15:42:13.043 +06:00 [INF] Route matched with {action = "GetAllVilla", controller = "VillaApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_API.Models.Dto.VillaDto]] GetAllVilla() on controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API).
+2025-02-18 15:42:13.044 +06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-18 15:42:13.044 +06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-18 15:42:13.044 +06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-18 15:42:13.045 +06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-18 15:42:13.045 +06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-18 15:42:13.045 +06:00 [DBG] Executing controller factory for controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API)
+2025-02-18 15:42:13.180 +06:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-18 15:42:13.195 +06:00 [DBG] Executed controller factory for controller MagicVilla_API.Controllers.VillaApiController (MagicVilla_API)
+2025-02-18 15:42:13.200 +06:00 [INF] Executing action method MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API) - Validation state: "Valid"
+2025-02-18 15:42:13.624 +06:00 [DBG] Entity Framework Core 9.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.2' with options: EngineType=SqlServer 
+2025-02-18 15:42:13.720 +06:00 [DBG] Compiling query expression: 
+'DbSet<Villa>()'
+2025-02-18 15:42:13.887 +06:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Villa>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Villa.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Villa.CreatedDate (DateTime) Required, 1], [Property: Villa.Details (string) Required, 2], [Property: Villa.Image (string) Required, 3], [Property: Villa.Name (string) Required MaxLength(50), 4], [Property: Villa.Occupancy (int) Required, 5], [Property: Villa.Rate (double) Required, 6], [Property: Villa.Sqft (int) Required, 7], [Property: Villa.UpdatedDate (DateTime) Required, 8] }
+        SELECT v.Id, v.CreatedDate, v.Details, v.Image, v.Name, v.Occupancy, v.Rate, v.Sqft, v.UpdatedDate
+        FROM Villas AS v) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Villa.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Villa.CreatedDate (DateTime) Required, 1], [Property: Villa.Details (string) Required, 2], [Property: Villa.Image (string) Required, 3], [Property: Villa.Name (string) Required MaxLength(50), 4], [Property: Villa.Occupancy (int) Required, 5], [Property: Villa.Rate (double) Required, 6], [Property: Villa.Sqft (int) Required, 7], [Property: Villa.UpdatedDate (DateTime) Required, 8] }
+        SELECT v.Id, v.CreatedDate, v.Details, v.Image, v.Name, v.Occupancy, v.Rate, v.Sqft, v.UpdatedDate
+        FROM Villas AS v, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Villa entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Villa instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Villa);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Villa.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Villa)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Villa | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Villa | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa")]: 
+                        {
+                            return 
+                            {
+                                Villa instance;
+                                instance = new Villa();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<CreatedDate>k__BackingField = dataReader.GetDateTime(1);
+                                instance.<Details>k__BackingField = dataReader.GetString(2);
+                                instance.<Image>k__BackingField = dataReader.GetString(3);
+                                instance.<Name>k__BackingField = dataReader.GetString(4);
+                                instance.<Occupancy>k__BackingField = dataReader.GetInt32(5);
+                                instance.<Rate>k__BackingField = dataReader.GetDouble(6);
+                                instance.<Sqft>k__BackingField = dataReader.GetInt32(7);
+                                instance.<UpdatedDate>k__BackingField = dataReader.GetDateTime(8);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Villa | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("MagicVilla_API.Models.Villa")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Villa)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: MagicVilla_API.Data.ApplicationDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-02-18 15:42:13.908 +06:00 [DBG] Creating DbConnection.
+2025-02-18 15:42:13.926 +06:00 [DBG] Created DbConnection. (16ms).
+2025-02-18 15:42:13.928 +06:00 [DBG] Opening connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 15:42:14.180 +06:00 [DBG] Opened connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 15:42:14.183 +06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-18 15:42:14.188 +06:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2025-02-18 15:42:14.190 +06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (7ms).
+2025-02-18 15:42:14.195 +06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedDate], [v].[Details], [v].[Image], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2025-02-18 15:42:14.223 +06:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedDate], [v].[Details], [v].[Image], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2025-02-18 15:42:14.244 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 15:42:14.263 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 15:42:14.264 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 15:42:14.264 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 15:42:14.264 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 15:42:14.264 +06:00 [DBG] Context 'ApplicationDbContext' started tracking 'Villa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-18 15:42:14.266 +06:00 [DBG] Closing data reader to 'MagicVilla' on server 'localhost'.
+2025-02-18 15:42:14.271 +06:00 [DBG] A data reader for 'MagicVilla' on server 'localhost' is being disposed after spending 43ms reading results.
+2025-02-18 15:42:14.273 +06:00 [DBG] Closing connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 15:42:14.278 +06:00 [DBG] Closed connection to database 'MagicVilla' on server 'localhost' (4ms).
+2025-02-18 15:42:14.280 +06:00 [INF] Executed action method MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1077.8208ms.
+2025-02-18 15:42:14.283 +06:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2025-02-18 15:42:14.285 +06:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-02-18 15:42:14.285 +06:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-02-18 15:42:14.285 +06:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-18 15:42:14.285 +06:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-18 15:42:14.285 +06:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-02-18 15:42:14.286 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_API.Models.Villa, MagicVilla_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 15:42:14.358 +06:00 [INF] Executed action MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API) in 1311.0176ms
+2025-02-18 15:42:14.358 +06:00 [INF] Executed endpoint 'MagicVilla_API.Controllers.VillaApiController.GetAllVilla (MagicVilla_API)'
+2025-02-18 15:42:14.358 +06:00 [DBG] Connection id "0HNAG02063G7P" completed keep alive response.
+2025-02-18 15:42:14.359 +06:00 [DBG] 'ApplicationDbContext' disposed.
+2025-02-18 15:42:14.364 +06:00 [DBG] Disposing connection to database 'MagicVilla' on server 'localhost'.
+2025-02-18 15:42:14.366 +06:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2025-02-18 15:42:14.366 +06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5064/api/VillaAPI/getAllVillas - 200 1297 application/json; charset=utf-8 1343.0104ms
+2025-02-18 15:44:10.212 +06:00 [DBG] Connection id "0HNAG02063G7P" received FIN.
+2025-02-18 15:44:10.212 +06:00 [DBG] Connection id "0HNAG02063G7P" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-18 15:44:10.213 +06:00 [DBG] Connection id "0HNAG02063G7P" disconnecting.
+2025-02-18 15:44:10.226 +06:00 [DBG] Connection id "0HNAG02063G7P" stopped.
+2025-02-18 16:00:11.584 +06:00 [INF] Application is shutting down...
+2025-02-18 16:00:11.585 +06:00 [DBG] Hosting stopping
+2025-02-18 16:00:11.589 +06:00 [DBG] Hosting stopped
