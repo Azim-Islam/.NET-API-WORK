@@ -75,7 +75,7 @@ namespace MagicVilla_API.Controllers
         [HttpPut("update/{id:int}", Name = "UpdateVilla")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(400)]
-        public IActionResult UpdateVilla(int id, [FromBody] VillaUpdateDto villaDto)
+        public async Task<IActionResult> UpdateVilla(int id, [FromBody] VillaUpdateDto villaDto)
         {
             if (villaDto == null || villaDto.Id != id)
             {
@@ -96,7 +96,7 @@ namespace MagicVilla_API.Controllers
                 Image = villaDto.Image
             };
             _db.Villas.Update(model);
-            _db.SaveChanges();
+            await _db.SaveChangesAsync();
             return NoContent();
         }
         
