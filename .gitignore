@@ -1,4 +1,5 @@
 /.idea
 /MagicVilla_API/bin
-MagicVilla_API/bin/Debug/net9.0/MagicVilla_API.dll
+/MagicVilla_API/bin/Debug/net9.0/MagicVilla_API.dll
 /MagicVilla_API/bin/Debug
+*/bin
