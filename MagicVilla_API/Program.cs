@@ -1,5 +1,8 @@
+using MagicVilla_API;
 using MagicVilla_API.Data;
 using MagicVilla_API.Logging;
+using MagicVilla_API.Repository;
+using MagicVilla_API.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
@@ -15,7 +18,9 @@ builder.Host.UseSerilog();
 builder.Services.AddControllers().AddNewtonsoftJson();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddScoped<IVillaRepository, VillaRepository>();
 builder.Services.AddSingleton<ILogging, Logging>();
+builder.Services.AddAutoMapper(typeof(MappingConfig));
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSQLServerConnection"));
